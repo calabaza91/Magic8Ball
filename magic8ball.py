@@ -1,6 +1,5 @@
 #This simulates a Magic 8 Ball
-#Update 1: Add printAnswer function, user input and while loop
-#Future update: Have user ask a question and play the game
+#Update 2: Have user ask a question and play the game
 import random
 
 def getAnswer(answerNumber):
