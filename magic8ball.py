@@ -1,5 +1,6 @@
 #This simulates a Magic 8 Ball
 #Update 1: Add printAnswer function, user input and while loop
+#Future update: Have user ask a question and play the game
 import random
 
 def getAnswer(answerNumber):
@@ -30,9 +31,12 @@ def printAnswer():
 while True:
     #Input is converted to a string and is lowercased
     getFortuneTold = str(input('Would you like to get your fortune told? (Y/N)\n')).lower()
-
+    
     #check if first character matches 'y' or 'n', else shake again
     if getFortuneTold[0] == 'y':
+        question = str(input('Ask a question into the mists..\n'))
+        print('The mists respond..')
+        dramaticPause = input('...*~press enter~*...')
         printAnswer()
     elif getFortuneTold[0] == 'n':
         print('Goodbye and good luck..')
